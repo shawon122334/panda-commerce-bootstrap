@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panda Commerce Bootstrap</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="">
@@ -22,19 +23,23 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Shoes</a>
-            <a class="nav-link" href="#">Backpack</a>
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Subscribe</a>
+            <a class="nav-link" href="#shoes">Shoes</a>
+            <a class="nav-link" href="#backpack">Backpack</a>
+            <a class="nav-link" href="#subscribe">Subscribe</a>
           </div>
         </div>
       </div>
     </nav>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+    <div id="carouselExampleControls" class="carousel slide panda-slide mt-5" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-7">
-
+          <div class="row d-flex  align-items-center p-5">
+            <div class="col-md-7 ">
+              <h1>Mega LCD TV For Sports</h1>
+              <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
+              <h3>$1200</h3>
+              <button class="btn btn-warning">Buy Now >></button>
             </div>
             <div class="col-md-5">
               <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -42,16 +47,27 @@
           </div>
         </div>
         <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-7"></div>
+          <div class="row d-flex  align-items-center p-5">
+            <div class="col-md-7">
+              <h1>Cool Dude Headphone</h1>
+              <p>This is the best headphone in the world for the people who just want to waste time in front of the
+                funky world</p>
+              <h3>$420</h3>
+              <button class="btn btn-warning">Buy Now >></button>
+            </div>
             <div class="col-md-5">
               <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="row">
-            <div class="col-md-7"></div>
+          <div class="row d-flex  align-items-center p-5">
+            <div class="col-md-7">
+              <h1>X-box for your living room</h1>
+              <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
+              <h3>$600</h3>
+              <button class="btn btn-warning">Buy Now >></button>
+            </div>
             <div class="col-md-5">
               <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
             </div>
@@ -70,8 +86,8 @@
   </header>
   <main class="container">
     <section>
-      <div class="container overflow-hidden mt-5 ">
-        <div class="row gx-5">
+      <div class="container overflow-hidden mt-5 catagories">
+        <div class="row g-5">
           <div class="col">
             <div class="p-3 rounded bg-warning text-white d-flex align-items-center justify-content-around">
               <h1>Watch</h1>
@@ -95,25 +111,25 @@
     </section>
 
     <!-- this is shoes sectin -->
-    <section class="mt-5">
+    <section id="shoes" class="mt-5">
       <h3>Shoes</h3>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100 shadow">
+          <div class="card panda-card h-100 shadow">
             <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Supply 350</h5>
               <p class="card-text">The Yeezy Boost 350 V2 maintained its grip hold on sneaker culture with a trio of
                 releases - red, green, and copper colorways. Each pair released on November 23, 2016.</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer panda-card-footer">
               <h5>$120</h5>
               <button type="button" class="btn btn-warning">Buy Now >> </button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 shadow">
+          <div class="card panda-card h-100 shadow">
             <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Nike 360</h5>
@@ -122,14 +138,14 @@
                 lighter, more flexible technology underfoot, it brings one of Nike's most progressive innovations to the
                 present.</p>
             </div>
-            <div class="card-footer">
+            <div class="panda-card-footer">
               <h5>$320</h5>
               <button type="button" class="btn btn-warning">Buy Now >> </button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 shadow">
+          <div class="card panda-card h-100 shadow">
             <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Red Airmax</h5>
@@ -137,7 +153,7 @@
                 released in 1998, the Air Max Plus was instantly notable for its then-new Tuned Air technology as well
                 as the eye-catching design.</p>
             </div>
-            <div class="card-footer">
+            <div class="panda-card-footer">
               <h5>$260</h5>
               <button type="button" class="btn btn-warning">Buy Now >> </button>
             </div>
@@ -145,12 +161,13 @@
         </div>
       </div>
     </section>
+
     <!-- this is backpack section -->
-    <section class="mt-5">
+    <section id="backpack" class="mt-5">
       <h3>Backpacks</h3>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100 shadow">
+          <div class="card panda-card h-100 shadow">
             <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Red Bag</h5>
@@ -158,13 +175,13 @@
               <p class="card-text">he Red Backpack is a symbol. It represents the truth that you are already carrying
                 everything that you need to live your unique life.</p>
             </div>
-            <div class="card-footer">
+            <div class="panda-card-footer">
               <button type="button" class="btn btn-warning">Buy Now >> </button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 shadow">
+          <div class="card panda-card h-100 shadow">
             <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Blue Bag</h5>
@@ -172,13 +189,13 @@
               <p class="card-text">Smartly designed using nylon, this backpack from Power is a true value for money. The
                 bag comes with two spacious zippered compartment to hold your belongings.</p>
             </div>
-            <div class="card-footer">
+            <div class="panda-card-footer">
               <button type="button" class="btn btn-warning">Buy Now >> </button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 shadow">
+          <div class="card panda-card h-100 shadow">
             <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Black Bag</h5>
@@ -187,15 +204,17 @@
                 black backpack from Power.Tailored excellently from high-quality nylon, this backpack is lightweight,
                 durable.</p>
             </div>
-            <div class="card-footer">
+            <div class="panda-card-footer">
               <button type="button" class="btn btn-warning">Buy Now >> </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- this is a section where we say user to be connected -->
-    <section style="height: 300px;" class="bg-info mt-5 d-flex align-items-center justify-content-center">
+    <section id="subscribe" style="height: 300px;"
+      class="bg-info mt-5 d-flex align-items-center justify-content-center rounded">
       <div>
         <h1>STAY CONNECTED</h1>
         <h5>Get updates on sales, specials and more</h5>
@@ -204,6 +223,11 @@
       </div>
     </section>
   </main>
+  <footer class="text-center mt-5">
+    <small>
+      ©2021 Panda Commerce. All rights reserved
+    </small>
+  </footer>
   <!-- js -->
   <script src="js/bootstrap.min.js"></script>
 </body>
